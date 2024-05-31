@@ -1,0 +1,31 @@
+<form (ngSubmit)="register()" #registerForm="ngForm" class="form">
+  <h2>Register</h2>
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" [(ngModel)]="email" required>
+  </div>
+
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" [(ngModel)]="name" required>
+  </div>
+
+  <div>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" [(ngModel)]="password" required>
+  </div>
+
+  <div>
+    <label for="route">Route:</label>
+    <select id="route" name="route" [(ngModel)]="selectedRoute" required>
+      <!-- <option value="" disabled>Select a route</option> -->
+      <option value="">Home</option>
+      <option value="cart">Cart</option>
+      <option value="profile">Profile</option>
+    </select>
+  </div>
+
+  <button type="submit">Register</button>
+</form>
+
+<!-- [disabled]="!registerForm.valid" -->

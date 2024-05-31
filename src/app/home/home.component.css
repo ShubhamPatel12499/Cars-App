@@ -1,0 +1,201 @@
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+#topbutton{
+    margin-top: 30px;
+    display: block;
+    cursor: pointer;
+    font-size: 16px;
+    padding:10px;
+    border-radius: 8px;
+    margin-left: 1360px;
+    color: white;
+    background-color: black;
+    border:none;
+}
+
+#topbutton:hover{
+    background-color:rgb(23, 35, 55);
+    color:white;
+    background-color: #66696b;
+}
+
+#button button{
+    margin: auto;
+    margin-top: 30px;
+    display: block;
+    cursor: pointer;
+    font-size: 16px;
+    padding:10px;
+    border-radius: 8px;
+    color:white;
+    background-color: black;
+    border:none;
+}
+
+#button button:hover{
+    color:white;
+    background-color: #66696b;
+}
+
+#griddiv{
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(3, 380px);;
+    width:90%;
+    margin: auto;
+    margin-top: 50px;
+    /* border: 1px solid red; */
+    gap:30px;
+}
+
+#griddiv div{
+    /* border: 1px solid black; */
+    padding:40px;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+}
+#griddiv img{
+    /* border: 1px solid teal; */
+    display: block;
+    width:90%;
+    height:50%;
+    margin: auto;
+}
+#griddiv p{
+    text-align: center;
+}
+
+#griddiv button{
+    display: inline-block;
+    margin: auto;
+    font-size: 14px;
+    padding:8px;
+    margin: 5px auto auto auto;
+    border-radius: 5px;
+    margin-bottom: 5px; 
+    background-color: black;
+    color:white;
+    border:none;
+}
+
+#griddiv button:not(:last-child) {
+    margin-left: 20px;
+    margin-right: 30px; 
+    margin-bottom: 5px; 
+}
+
+#griddiv button:hover{
+    background-color: #66696b;
+    color:white;
+    cursor: pointer;
+}
+
+/* .form{
+    margin:auto; 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding:3%; 
+    border-radius: 20px;
+    width:30%;
+  }
+  .form div{
+    margin: auto;
+    display:flex;
+    flex-direction: column;
+  }
+  
+  .form input{
+    margin-top: 10px;
+  }
+  
+  .form label{
+    margin-top: 10px;
+  }
+  
+  .form button{
+     margin: auto;
+     font-size: 16px;
+     padding:8px;
+     margin: 10px auto auto auto;
+     border-radius: 8px;
+     border:none;
+  }
+  
+  .form button:hover{
+   background-color: black;
+   color:white;
+   cursor: pointer;
+  } */
+
+  .form {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  
+  .form h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .form div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  .form input {
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form button {
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .form button:hover {
+    background-color: #66696b;
+  }
+  
+  .form label {
+    margin-bottom: 5px;
+    text-align: left;
+    width: 100%;
+  }
+
+  .form .button-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .form .button-row button {
+    margin: 0 10px; 
+  }

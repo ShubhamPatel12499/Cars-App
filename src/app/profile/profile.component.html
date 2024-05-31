@@ -1,0 +1,28 @@
+<!-- <div class="form" *ngIf="isLoggedIn(); else loginMessage"> -->
+<div class="form">
+<h2>Profile</h2>
+<div>
+  <label>Name:</label>
+  <p>{{ userData.name }}</p>
+</div>
+
+<div>
+  <label>Email:</label>
+  <p>{{ userData.email }}</p>
+</div>
+
+<div>
+  <label>Home Route:</label>
+  <select [(ngModel)]="userData.selectedRoute" (ngModelChange)="updateRoute(userData.selectedRoute)">
+    <option value="">Home</option>
+    <option value="cart">Cart</option>
+  </select>
+</div>
+</div>
+
+<ng-template #loginMessage>
+    <div id="button">
+      <h2>Please Login First to see your profile</h2>
+      <button routerLink="/login">Login</button>
+    </div>
+  </ng-template>

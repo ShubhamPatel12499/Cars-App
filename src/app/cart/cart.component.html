@@ -1,0 +1,42 @@
+<!-- <p>cart works!</p> -->
+<!-- <div *ngIf="(!cartData || cartData.length === 0) && !isLoggedIn && !loading"></div> -->
+
+<!-- <div *ngIf="isLoggedIn(); else loginMessage"> -->
+  <div *ngIf="isLoggedIn; else loginMessage">
+  <div *ngFor="let item of cartItems">
+  <div id="griddiv">
+    <div>
+    <img [src]="item.profile" alt="Item Image">
+    <p>Name: {{ item.name }}</p>
+    <p>Brand: {{ item.brand }}</p>
+    <p>Price: {{ item.price }}</p>
+    <button (click)="deleteItem(item)">Delete</button>
+    <!-- <button (click)="editItem(item)">Edit</button> -->
+  </div>
+  </div>
+
+  </div>
+  </div>
+
+  <h2>Archived Items</h2>
+  <div *ngFor="let item of archivedItems">
+  <div *ngIf="item.editMode">
+    <div id="griddiv">
+      <div>
+    <img [src]="item.profile" alt="Item Image">
+    <p>Name: {{ item.name }}</p>
+    <p>Brand: {{ item.brand }}</p>
+    <p>Price: {{ item.price }}</p>
+    <button (click)="permanentDeleteItem(item)">Delete</button>
+    <button (click)="restoreItem(item)">Restore</button>
+  </div>
+</div>
+  </div>
+  </div>
+  
+  <ng-template #loginMessage>
+    <div id="button">
+      <h2>Please Login First to see the Cart Page</h2>
+      <button routerLink="/login">Login</button>
+    </div>
+  </ng-template>
