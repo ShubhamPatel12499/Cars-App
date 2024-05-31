@@ -1,4 +1,5 @@
 # Car App
+![Screenshot (1275)](https://github.com/ShubhamPatel12499/Cars-App/assets/98810944/38e37d4a-30f7-4a4f-913a-5896a65e0468)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
 
